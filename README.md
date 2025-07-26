@@ -20,7 +20,7 @@ This analysis helps understand how viewers feel about movies based on the words 
 
 The output visualization shows the most frequent **negative** and **positive** words extracted from the sample dataset.
 
-![Sentiment Analysis Visualization](sentiment_plot.png)
+![Sentiment Analysis Visualization](images/sentiment_plot.png)
 
 - **Negative Words:** weak, terrible, plot, boring  
 - **Positive Words:** worth, masterpiece, love, fantastic  
