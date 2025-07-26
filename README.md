@@ -1,51 +1,66 @@
-# 🎬 Sentiment Analysis of Movie Reviews
+# Sentiment Analysis of Movie Reviews
 
-This project demonstrates a **Sentiment Analysis** pipeline in **R** that analyzes movie reviews to classify them as **positive** or **negative**. Using **text mining** techniques and the **Bing sentiment lexicon**, the project extracts meaningful insights from raw text data and visualizes them with **ggplot2**.
-
----
-
-## 🌟 Overview
-
-Sentiment Analysis is a Natural Language Processing (NLP) technique used to determine the emotional tone behind words.  
-In this project:
-- Movie reviews are processed to identify sentiment-bearing words.
-- Each word is classified as either **positive** or **negative**.
-- The results are visualized using **faceted bar charts** for better interpretation.
-
-This analysis helps understand how viewers feel about movies based on the words they use in their reviews.
+This project demonstrates an **advanced Sentiment Analysis** pipeline in **R** that analyzes movie reviews, classifies them as **positive** or **negative**, and visualizes sentiment distribution using multiple plots.  
+The project now also incorporates the **NRC Emotion Lexicon** to detect **emotions** (e.g., joy, anger, sadness) and uses **word clouds** and **pie charts** for better insights.
 
 ---
 
-## 📊 Example Output
+## Overview
 
-The output visualization shows the most frequent **negative** and **positive** words extracted from the sample dataset.
+Sentiment Analysis is an NLP technique that identifies emotional tone in text.  
+In this project:  
+- Movie reviews are cleaned and tokenized.  
+- Words are classified as **positive** or **negative** using the **Bing lexicon**.  
+- **Emotions** (joy, anger, trust, fear, etc.) are detected using the **NRC lexicon**.  
+- Results are visualized with **ggplot2**, including **faceted bar charts, word clouds, and sentiment pie charts**.
 
-![Sentiment Analysis Visualization](images/sentiment_plot.png)
-
-- **Negative Words:** weak, terrible, plot, boring  
-- **Positive Words:** worth, masterpiece, love, fantastic  
-
----
-
-## 🔥 Key Features
-
-✔️ **Tokenization** – Breaks text into individual words  
-✔️ **Stop-word Removal** – Removes non-informative words like "and", "the", etc.  
-✔️ **Sentiment Classification** – Uses the **Bing lexicon** to label words as positive or negative  
-✔️ **Data Visualization** – Displays sentiment results using **ggplot2** faceted bar plots  
+These analyses reveal how viewers express opinions about movies through their word choices.
 
 ---
 
-## 🛠️ Technologies Used
+## Example Outputs
+
+The updated project generates multiple **visual insights**:
+
+- **Top 10 Most Frequent Words**  
+- **Positive vs. Negative Words (Bar Chart)**  
+- **Word Clouds for Sentiment Words**  
+- **Overall Sentiment Distribution (Pie Chart)**  
+- **Emotion Distribution (NRC Lexicon)**  
+
+### Sample Visualizations:
+
+![Frequent Words](images/top_words.png)
+
+![Pie Chart](images/sentiment_pie.png)
+
+---
+
+## Key Features
+
+**Tokenization & Stop-word Removal**  
+**Sentiment Classification** using **Bing lexicon**  
+**Emotion Analysis** using **NRC lexicon**  
+**Data Visualization** with:
+   - Faceted Bar Charts  
+   - Word Clouds  
+   - Sentiment Pie Chart  
+   - Emotion Distribution  
+
+---
+
+## Technologies Used
 
 - **R Programming Language**  
-- **tidyverse** – Data manipulation and visualization  
+- **tidyverse** – Data manipulation & plotting  
 - **tidytext** – Text mining  
-- **textdata** – Access to sentiment lexicons  
+- **textdata** – Sentiment & emotion lexicons  
+- **wordcloud** – Word cloud generation  
+- **RColorBrewer** – Enhanced color palettes  
 
 ---
 
-## ⚡ Installation & Requirements
+## Installation & Requirements
 
 ### Software
 - [R](https://cran.r-project.org/) (version 4.0 or later)
@@ -61,17 +76,18 @@ install.packages("textdata")    # Sentiment lexicons
 
 ---
 
-### 📈 Results & Insights
-- Positive reviews often include words like love, fantastic, worth, and masterpiece.
-- Negative reviews frequently contain words like boring, weak, terrible, and plot.
-- These insights help understand viewer perception and can be applied to larger datasets.
+### Results & Insights
+- Positive words (e.g., love, fantastic, masterpiece) dominate favorable reviews.
+- Negative words (e.g., boring, weak, terrible) occur in unfavorable ones.
+- Emotion analysis reveals nuanced sentiments like joy, anger, and sadness.
+- Word clouds highlight the most impactful sentiment words visually.
 
 ---
 
-### 🚀 Future Enhancements
-- Use a larger dataset of real-world movie reviews
-- Implement other sentiment lexicons (AFINN, NRC)
-- Build an interactive Shiny dashboard
-- Incorporate machine learning models for advanced sentiment analysis
+### Future Enhancements
+- Use a larger dataset of real-world reviews
+- Implement interactive Shiny dashboard
+- Add machine learning models for predictive sentiment analysis
+- Integrate with real-time review streams (e.g., Twitter API)
 
 
