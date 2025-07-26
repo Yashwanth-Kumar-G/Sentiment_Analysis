@@ -1,7 +1,6 @@
 # Sentiment Analysis of Movie Reviews
 
-This project demonstrates an **advanced Sentiment Analysis** pipeline in **R** that analyzes movie reviews, classifies them as **positive** or **negative**, and visualizes sentiment distribution using multiple plots.  
-The project now also incorporates the **NRC Emotion Lexicon** to detect **emotions** (e.g., joy, anger, sadness) and uses **word clouds** and **pie charts** for better insights.
+This project demonstrates an **advanced Sentiment Analysis** pipeline in **R** that analyzes movie reviews, classifies them as **positive** or **negative**, and visualizes sentiment distribution using multiple plots. The project now also incorporates the **NRC Emotion Lexicon** to detect **emotions** (e.g., joy, anger, sadness) and uses **word clouds** and **pie charts** for better insights.
 
 ---
 
